@@ -38,7 +38,7 @@ export default function App() {
 
   const filteredTasks = tasks.filter((t) => {
     if (filter === "completed") return t.completed;
-    // if (filter === "pending") return !t.completed;
+    if (filter === "pending") return !t.completed;
     return true;
   });
 
